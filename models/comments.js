@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     username: DataTypes.STRING,
     title: DataTypes.STRING,
     description: DataTypes.STRING,
-    stars: DataTypes.INTEGER
+    stars: DataTypes.DOUBLE,
   }, {
     sequelize,
     modelName: 'comments',

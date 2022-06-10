@@ -22,8 +22,8 @@ module.exports = (sequelize, DataTypes) => {
     full_time: DataTypes.STRING,
     actors: DataTypes.STRING,
     creation_date: DataTypes.DATE,
-    kp_rating: DataTypes.STRING,
-    imdb_rating: DataTypes.STRING,
+    kp_rating: DataTypes.DOUBLE,
+    imdb_rating: DataTypes.DOUBLE,
     our_self_rating: DataTypes.STRING
   }, {
     sequelize,

@@ -33,10 +33,10 @@ module.exports = {
         type: Sequelize.DATE
       },
       kp_rating: {
-        type: Sequelize.STRING
+        type: Sequelize.DOUBLE
       },
       imdb_rating: {
-        type: Sequelize.STRING
+        type: Sequelize.DOUBLE
       },
       our_self_rating: {
         type: Sequelize.STRING
