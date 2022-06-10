@@ -10,7 +10,14 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      video_file_system_links.belongsTo(models.creators, { //   связь  creators == video_file_system_links
+        foreignKey: 'creator_id',
+        as: 'creator'
+      });
+      video_file_system_links.belongsTo(models.video_attributes, { //   связь  creators == video_file_system_links
+        foreignKey: 'video_id',
+        as: 'video_attribute'
+      });
     }
   }
   video_file_system_links.init({
